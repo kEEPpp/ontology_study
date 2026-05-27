@@ -1,0 +1,48 @@
+{"source": "subj_python", "target": "con_ml", "relation": "EXCELS_AT", "properties": {"strength": 0.95, "reason": "대부분의 ML 라이브러리가 Python 기반"}}
+{"source": "subj_python", "target": "con_web_dev", "relation": "SUPPORTS", "properties": {"strength": 0.75, "role": "backend"}}
+{"source": "subj_python", "target": "con_oop", "relation": "SUPPORTS", "properties": {"strength": 0.80}}
+{"source": "subj_python", "target": "con_functional", "relation": "SUPPORTS", "properties": {"strength": 0.70}}
+{"source": "subj_javascript", "target": "con_web_dev", "relation": "EXCELS_AT", "properties": {"strength": 0.99, "reason": "유일한 브라우저 네이티브 언어"}}
+{"source": "subj_javascript", "target": "con_functional", "relation": "SUPPORTS", "properties": {"strength": 0.85}}
+{"source": "subj_javascript", "target": "con_oop", "relation": "SUPPORTS", "properties": {"strength": 0.70}}
+{"source": "subj_java", "target": "con_oop", "relation": "EXCELS_AT", "properties": {"strength": 0.95, "reason": "순수 객체지향 언어 설계"}}
+{"source": "subj_java", "target": "con_type_system", "relation": "HAS_FEATURE", "properties": {"type": "static typing"}}
+{"source": "subj_typescript", "target": "subj_javascript", "relation": "IS_SUPERSET_OF", "properties": {"note": "TypeScript는 JavaScript의 상위 호환 언어"}}
+{"source": "subj_typescript", "target": "con_type_system", "relation": "HAS_FEATURE", "properties": {"type": "static typing with gradual typing"}}
+{"source": "subj_rust", "target": "con_type_system", "relation": "HAS_FEATURE", "properties": {"type": "static typing with ownership model"}}
+{"source": "res_django", "target": "subj_python", "relation": "BUILT_WITH", "properties": {"version_requirement": ">=3.10"}}
+{"source": "res_django", "target": "con_web_dev", "relation": "USED_FOR", "properties": {"layer": "fullstack"}}
+{"source": "res_fastapi", "target": "subj_python", "relation": "BUILT_WITH", "properties": {"version_requirement": ">=3.8"}}
+{"source": "res_fastapi", "target": "con_web_dev", "relation": "USED_FOR", "properties": {"layer": "backend", "specialty": "REST API"}}
+{"source": "res_react", "target": "subj_javascript", "relation": "BUILT_WITH", "properties": {}}
+{"source": "res_react", "target": "con_web_dev", "relation": "USED_FOR", "properties": {"layer": "frontend"}}
+{"source": "res_nextjs", "target": "res_react", "relation": "EXTENDS", "properties": {"added_feature": "SSR, SSG, File-based routing"}}
+{"source": "res_nextjs", "target": "subj_javascript", "relation": "BUILT_WITH", "properties": {}}
+{"source": "res_nextjs", "target": "subj_typescript", "relation": "SUPPORTS", "properties": {"note": "TypeScript 기본 지원"}}
+{"source": "res_tensorflow", "target": "subj_python", "relation": "BUILT_WITH", "properties": {}}
+{"source": "res_tensorflow", "target": "con_ml", "relation": "USED_FOR", "properties": {"specialty": "딥러닝 프로덕션 배포"}}
+{"source": "res_pytorch", "target": "subj_python", "relation": "BUILT_WITH", "properties": {}}
+{"source": "res_pytorch", "target": "con_ml", "relation": "USED_FOR", "properties": {"specialty": "딥러닝 연구 및 프로토타이핑"}}
+{"source": "res_numpy", "target": "subj_python", "relation": "BUILT_WITH", "properties": {}}
+{"source": "res_numpy", "target": "res_tensorflow", "relation": "DEPENDENCY_OF", "properties": {}}
+{"source": "res_numpy", "target": "res_pytorch", "relation": "DEPENDENCY_OF", "properties": {}}
+{"source": "claim_python_ai", "target": "subj_python", "relation": "ABOUT", "properties": {}}
+{"source": "claim_python_ai", "target": "evd_tiobe_2024", "relation": "SUPPORTED_BY", "properties": {}}
+{"source": "claim_python_ai", "target": "evd_github_octoverse", "relation": "SUPPORTED_BY", "properties": {}}
+{"source": "claim_js_web", "target": "subj_javascript", "relation": "ABOUT", "properties": {}}
+{"source": "claim_js_web", "target": "evd_stackoverflow_2023", "relation": "SUPPORTED_BY", "properties": {}}
+{"source": "claim_ts_large", "target": "subj_typescript", "relation": "ABOUT", "properties": {}}
+{"source": "subj_python", "target": "res_python_popularity", "relation": "ACHIEVED", "properties": {"year": 2023}}
+{"source": "subj_typescript", "target": "res_ts_adoption", "relation": "ACHIEVED", "properties": {"year": 2023}}
+{"source": "subj_python", "target": "com_pypi", "relation": "HAS_ECOSYSTEM", "properties": {}}
+{"source": "subj_javascript", "target": "com_npm", "relation": "HAS_ECOSYSTEM", "properties": {}}
+{"source": "subj_python", "target": "com_python_foundation", "relation": "GOVERNED_BY", "properties": {}}
+{"source": "subj_python", "target": "pol_pep8", "relation": "GOVERNED_BY", "properties": {}}
+{"source": "subj_javascript", "target": "pol_ecmascript", "relation": "GOVERNED_BY", "properties": {}}
+{"source": "com_pypi", "target": "pol_semver", "relation": "FOLLOWS", "properties": {}}
+{"source": "com_npm", "target": "pol_semver", "relation": "FOLLOWS", "properties": {}}
+{"source": "int_python_ml_affinity", "target": "subj_python", "relation": "MEASURES_AFFINITY_OF", "properties": {}}
+{"source": "int_python_ml_affinity", "target": "con_ml", "relation": "MEASURES_AFFINITY_TO", "properties": {}}
+{"source": "int_js_web_dominance", "target": "subj_javascript", "relation": "MEASURES_DOMINANCE_OF", "properties": {}}
+{"source": "int_js_web_dominance", "target": "con_web_dev", "relation": "IN_DOMAIN", "properties": {}}
+{"source": "int_rust_performance", "target": "subj_rust", "relation": "MEASURES_STRENGTH_OF", "properties": {}}
