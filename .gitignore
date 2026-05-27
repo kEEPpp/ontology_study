@@ -10,3 +10,17 @@ desktop.ini
 .vscode/
 *.swp
 *.swo
+
+# Python 프로젝트 설정 (uv/pyproject)
+.python-version
+pyproject.toml
+uv.lock
+main.py
+
+# 생성된 임시 파일
+generated_context.txt
+programming_lang_pack/
+
+# Python 캐시
+__pycache__/
+*.pyc
